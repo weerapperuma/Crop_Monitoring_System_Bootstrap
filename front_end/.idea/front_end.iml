@@ -8,5 +8,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="f6b40d3bdc" level="application" />
+    <orderEntry type="library" name="sweetalert2" level="application" />
+    <orderEntry type="library" name="jquery-3.7.1" level="application" />
+    <orderEntry type="library" name="bootstrap" level="application" />
   </component>
 </module>
