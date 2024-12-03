@@ -1,4 +1,5 @@
 package lk.ijse.gdse68.crop_monitoring_backend.entity;
 
-public class Role {
+public enum Role {
+    MANAGER, ADMINISTRATIVE, SCIENTIST, OTHER
 }
