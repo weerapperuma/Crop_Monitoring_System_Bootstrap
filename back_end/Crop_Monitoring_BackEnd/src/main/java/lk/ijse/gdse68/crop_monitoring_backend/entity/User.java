@@ -1,6 +1,7 @@
 package lk.ijse.gdse68.crop_monitoring_backend.entity;
 
 import jakarta.persistence.*;
+import lk.ijse.gdse68.crop_monitoring_backend.util.Enum.Role;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
