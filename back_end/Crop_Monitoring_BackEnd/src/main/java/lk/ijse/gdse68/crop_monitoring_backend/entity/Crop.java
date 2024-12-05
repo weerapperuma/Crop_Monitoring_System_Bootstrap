@@ -14,25 +14,26 @@ import java.util.List;
 @Entity
 @Table(name = "crops")
 public class Crop {
+
     @Id
     @Column(name = "crop_code")
-    private String crop_code;
+    private String cropCode;
     @Column(name = "crop_common_name")
-    private String crop_common_name;
+    private String cropCommonName;
     @Column(name = "crop_scientific_name")
-    private String scientific_name;
-    @Column(name = "crop_image",columnDefinition = "LONGTEXT")
-    private String crop_image;
-    @Column(name = "crop_category")
-    private String crop_category;
+    private String cropScientificName;
+    @Column(name = "crop_image", columnDefinition = "LONGTEXT")
+    private String cropImage;
+    @Column(name = "category")
+    private String category;
     @Column(name = "crop_season")
-    private String crop_season;
+    private String cropSeason;
 
     @ManyToOne
-    @JoinColumn(name = "field_code",referencedColumnName = "field_code")
+    @JoinColumn(name = "field_code", referencedColumnName = "field_code")
     private Field field;
 
     @ManyToMany(mappedBy = "crop")
     @JsonIgnore
-    private List<CropDetails> cropDetailsList;
+    private List<CropDetails> cropDetails;
 }

@@ -15,23 +15,28 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class CropDTO implements CropResponse, SuperDto {
-
     private String cropCode;
-    @NotBlank
-    @Pattern(regexp = "^[A-Z][a-zA-Z\\\\s]*$")
-    @Size(min = 1, max = 50)
-    private String cropCommonName;
-    @NotBlank
-    @Pattern(regexp = "^[A-Z][a-zA-Z0-9\\s]*$")
-    @Size(min = 1, max = 50)
-    private String cropScientificName;
-    @NotBlank
-    private String cropImage;
+
     @NotBlank
     @Pattern(regexp = "^[A-Z][a-zA-Z\\s]*$")
-    private String cropCategory;
+    @Size(max = 50)
+    private String cropCommonName;
+
+    @NotBlank
+    @Pattern(regexp = "^[A-Z][a-zA-Z0-9\\s]*$")
+    @Size(max = 100)
+    private String cropScientificName;
+
+    @NotBlank
+    private String cropImage;
+
+    @NotBlank
+    @Pattern(regexp = "^[A-Z][a-zA-Z\\s]*$")
+    private String category;
+
     @NotBlank
     @Pattern(regexp = "^[A-Z][a-zA-Z\\s]*$")
     private String cropSeason;
-    private String field;
+
+    private String fieldCode;
 }

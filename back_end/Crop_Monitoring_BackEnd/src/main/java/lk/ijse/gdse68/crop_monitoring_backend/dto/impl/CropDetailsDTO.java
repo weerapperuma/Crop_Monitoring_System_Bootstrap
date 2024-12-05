@@ -19,14 +19,19 @@ import java.util.List;
 public class CropDetailsDTO implements CropDetailsResponse, SuperDto {
     private String logCode;
     private Date logDate;
+
     @NotBlank
     private String logDetails;
+
     @NotBlank
     private String observedImage;
+
     @NotBlank
-    private List<String> fieldIds;
+    private List<String> fieldCodes;
+
     @NotBlank
-    private List<String> cropIds;
+    private List<String> cropCodes;
+
     @NotBlank
     private List<String> staffIds;
 }

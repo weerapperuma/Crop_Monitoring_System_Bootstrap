@@ -2,6 +2,7 @@ package lk.ijse.gdse68.crop_monitoring_backend.util;
 
 import lk.ijse.gdse68.crop_monitoring_backend.dto.impl.*;
 import lk.ijse.gdse68.crop_monitoring_backend.entity.*;
+import lk.ijse.gdse68.crop_monitoring_backend.dto.impl.EquipmentDTO;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

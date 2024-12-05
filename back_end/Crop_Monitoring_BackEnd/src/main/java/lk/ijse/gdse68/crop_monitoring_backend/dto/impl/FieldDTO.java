@@ -17,9 +17,10 @@ import java.util.List;
 @AllArgsConstructor
 @Data
 public class FieldDTO implements FieldResponse, SuperDto {
-    private String fieldId;
+    private String fieldCode;
+
     @NotBlank
-    @Pattern(regexp="^[A-Za-z0-9 ]+$")
+    @Pattern(regexp = "^[A-Za-z0-9 ]+$")
     private String fieldName;
 
     @NotBlank
@@ -37,5 +38,4 @@ public class FieldDTO implements FieldResponse, SuperDto {
 
     @NotNull
     private List<String> staffId;
-
 }
