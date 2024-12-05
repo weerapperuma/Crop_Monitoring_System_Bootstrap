@@ -1,0 +1,231 @@
+h1 {
+  color: var(--filed-color);
+  font-size: 2.2vw;
+  letter-spacing: 0.8px;
+  font-weight: 600;
+}
+
+input {
+  border-radius: 11px;
+  border: 1px solid #dcdcdc;
+  background: #fff;
+  width: 25vw;
+  height: 43px;
+  font-size: 1vw;
+}
+
+input + button {
+  width: 43px;
+  background: #dcdcdc;
+}
+
+.add-log-btn {
+  border-radius: 10px;
+  background: #009444;
+  color: #fff;
+  font-size: 1vw;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+}
+
+#card-set{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    gap: 20px;
+    max-height: 64vh;
+    overflow-y: scroll;
+}
+
+#card-set::-webkit-scrollbar{
+    width: 0;
+}
+
+.log-card h3{
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(97, 97, 97);
+}
+
+.log-card h2{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#save-log-popup , #update-log-popup , #view-log-popup{
+  display: none;
+  animation: wipe 0.2s ease-in-out;
+}
+
+@keyframes wipe {
+  0% {
+    transform: translateY(-100%); /* Start off-screen */
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0); /* End at normal position */
+    opacity: 1;
+  }
+}
+
+#save-log-popup > div , #update-log-popup > div , #view-log-popup > div{
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.956);
+  box-shadow: 0px 1px 26px 3px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(2.5px);
+}
+
+#save-log-popup .form-set , #update-log-popup .form-set , #view-log-popup .form-set{
+  grid-template-columns: repeat(2,1fr);
+  column-gap: 20px;
+}
+
+#view-log-popup .field-img{
+  height: 40vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#view-log-popup .observed-image{
+  object-fit: cover;
+    object-position: center;
+}
+
+#save-log-popup h2 , #update-log-popup h2 , #view-log-popup h2{
+  font-size: 1.4vw;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  color: #009444;
+}
+
+#save-log-popup .select-field-set h6 , .field-set h6{
+    font-size: 1vw;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    color: #4c7ce3;
+    width: 100%;
+    text-align: center;
+  background: rgba(76, 124, 227, 0.27);
+  padding: 5px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.log-card > :first-child{
+  height: 25vh !important;
+}
+
+.log-card:hover > :first-child img{
+  transform: scale(1.5);
+}
+
+.log-card > :first-child img{
+  object-fit: cover;
+}
+
+.select-sets{
+  height: auto;
+  max-height: 17vh;
+  overflow-y: scroll;
+  justify-content: space-between;
+}
+
+.select-sets::-webkit-scrollbar{
+  width: 0;
+}
+
+.select-sets h6{
+  font-size: 1vw;
+}
+
+#save-log-popup .select-staff-set h6 , .staff-set h6{
+  font-size: 1vw;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  color: #9f4ce3;
+  width: 100%;
+  text-align: center;
+  background: rgba(159, 76, 227, 0.32);
+  padding: 5px;
+  border-radius: 8px;
+
+}
+
+#save-log-popup .select-field-set , #save-log-popup .select-crop-set , #save-log-popup .select-staff-set{
+  margin-top: 20px;
+}
+
+
+#save-log-popup .select-crop-set h6 , .crop-set h6{
+  font-size: 1vw;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  color: #94ab31;
+  width: 100%;
+  text-align: center;
+  background: rgba(199, 227, 76, 0.4);
+  padding: 5px;
+  border-radius: 8px;
+}
+
+/* From Uiverse.io by vinodjangid07 */ 
+.file-upload-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.file-upload-label input {
+  display: none;
+}
+.file-upload-label svg {
+  height: 50px;
+  fill: #009444;
+  margin-bottom: 20px;
+}
+.file-upload-label {
+  cursor: pointer;
+  background-color: #00944544;
+  padding: 30px 70px;
+  border-radius: 40px;
+  border: 2px dashed #009444;
+  box-shadow: 0px 0px 200px -50px #0094457e;
+}
+.file-upload-design {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.browse-button {
+  background-color: #009444;
+  padding: 5px 15px;
+  border-radius: 10px;
+  color: white;
+  transition: all 0.3s;
+}
+.browse-button:hover {
+  background-color: rgb(14, 14, 14);
+}
+
+
+@media screen and (max-width: 1024px) {
+  input,
+  .add-member-btn {
+    font-size: 1.5vw;
+  }
+  .table h5 {
+    font-size: 1.3vw;
+  }
+  svg {
+    width: 1.4vw;
+    height: 100%;
+  }
+  .table .table-body .action > :nth-child(3) {
+    width: 1.7vw;
+  }
+  #save-log-popup h2 , #update-log-popup h2 , #view-log-popup h2{
+    font-size: 2vw;
+  }
+}
