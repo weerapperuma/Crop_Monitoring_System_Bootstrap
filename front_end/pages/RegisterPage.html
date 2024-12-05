@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Register</title>
+      <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- Notyf CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf/notyf.min.css" />
+
+      <link rel="stylesheet" href="/css/style.css">
+      <link rel="stylesheet" href="/css/RegisterForm.css">
+</head>
+<body>
+      <div class="main-container d-grid">
+            <div class="w-100 h-100 d-flex align-items-end">
+                  <img class="w-auto" src="/assets/registerPageImg.png" alt="" srcset="">
+                  <div class="h-100 d-flex align-items-center justify-content-start ms-5">
+                    <canvas class="h-75"></canvas>
+                </div>
+            </div>
+            <div class="pt-5 pe-5">
+                  <div class="logo d-flex gap-4 align-items-center mt-5">
+                        <img src="/assets/logo.png" alt="logo">
+                        <h1 class="m-0">Green Shadow</h1>
+                  </div>
+                  <div class="form-container mt-5">
+                <h3>Create your account</h3>
+                <h4 class="mt-2">"Sign Up to start managing your farm today!"</h4>
+
+                <div class="mt-5">
+
+                    <div class="d-flex flex-column gap-3">
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control email-input" id="floatingInput" placeholder="name@example.com">
+                            <label for="floatingInput">Email address</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control password-input" id="floatingPassword" placeholder="Password">
+                            <label for="floatingPassword">Password</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                              <select class="form-select role-select" id="floatingSelect" aria-label="Floating label select example">
+                                    <option selected>Choose an option</option>
+                                    <option value="MANAGER">MANAGER</option>
+                                    <option value="ADMINISTRATIVE">ADMINISTRATIVE</option>
+                                    <option value="SCIENTIST">SCIENTIST</option>
+                              </select>
+                              <label for="floatingSelect">Select an option</label>
+                        </div>
+
+                    </div>
+
+                    <div class="d-flex mt-5" >
+                        <label class="checkbox-btn">
+                            <label for="checkbox"></label>
+                            <input id="checkbox" type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <h4 class="m-0 term">I agree to all Term, Privacy Policy and Fees</h4>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d-flex align-items-center justify-content-between mt-5">
+                <h5 class="switchForm">Already have an account ? <a href="/index.html">Login</a> Now. </h5>
+                <button class="cssbuttons-io-button">
+                    Sign Up
+                    <div class="icon">
+                        <svg
+                                height="24"
+                                width="24"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                    fill="currentColor"
+                            ></path>
+                        </svg>
+                    </div>
+                </button>
+            </div>
+      </div>
+      <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Notyf JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/notyf/notyf.min.js"></script>
+    <script type="module" src="/controller/RegisterController.js"></script>
+</body>
+</html>

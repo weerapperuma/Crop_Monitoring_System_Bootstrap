@@ -1,0 +1,243 @@
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ABFFB8;
+}
+
+body > div{
+    width: 80%;
+    height: 80%;
+    background-image: url("../assets/background.png");
+    box-shadow: 0 0 103px 9px rgba(0, 0, 0, 0.25);
+}
+
+
+.main-container {
+  width: 73%;
+  grid-template-columns: repeat(2, 1fr);
+  padding-left: 30px;
+  width: 73%;
+}
+
+.main-container > :first-child img {
+  height: 90%;
+}
+
+canvas {
+  width: 1px;
+  background-color: var(--sub-font-color);
+}
+
+.main-container select {
+  padding-left: 20px;
+  color: var(--filed-color);
+  font-size: var(--font-14px);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  border: none;
+}
+
+.main-container .pe-5 {
+  padding-right: 6.5rem !important;
+}
+
+.main-container .logo img {
+  width: 33px;
+  height: 45px;
+}
+
+.main-container .logo h1 {
+  font-size: var(--font-24px);
+  font-weight: 500;
+  color: var(--font-color);
+}
+
+.form-container h3 {
+  font-size: var(--font-32px);
+  letter-spacing: 0.64px;
+  font-weight: 500;
+  color: var(--font-color);
+}
+
+.form-container h4 {
+  font-size: var(--font-18px);
+  font-weight: 500;
+  color: var(--sub-font-color);
+  letter-spacing: 0.18px;
+}
+
+.form-container .form-floating {
+  width: 100%;
+  box-shadow: 0 0 23px -6px rgba(0, 0, 0, 0.1);
+}
+
+.form-container .form-floating input {
+  color: var(--filed-color);
+  font-size: var(--font-16px);
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  border: none;
+}
+
+.form-container .form-floating label {
+  padding-left: 20px;
+  font-size: var(--font-13px);
+  font-weight: 500;
+}
+
+.form-container .form-floating input:focus {
+  outline: none;
+}
+
+.checkbox-btn {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkbox-btn input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkbox-btn label {
+  cursor: pointer;
+  font-size: var(--font-14px);
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 17px;
+  width: 17px;
+  transition: 0.2s linear;
+  border: 2px solid #b9b9b9;
+  box-shadow: 0px 0px 23px -6px rgba(0, 0, 0, 0.1);
+}
+.checkbox-btn input:checked ~ .checkmark {
+  background-color: transparent;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  left: 50%;
+  top: 40%;
+  width: 10px;
+  height: 14px;
+  border: 2px solid #0ea021;
+  filter: drop-shadow(0px 0px 10px #0ea021);
+  border-width: 0 2.5px 2.5px 0;
+  transition: 0.2s linear;
+  transform: translate(-50%, -50%) rotate(-90deg) scale(0.2);
+}
+
+.checkbox-btn input:checked ~ .checkmark:after {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, -50%) rotate(0deg) scale(1);
+  animation: pulse 1s ease-in;
+}
+
+.checkbox-btn input:checked ~ .checkmark {
+  transform: rotate(45deg);
+  border: none;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotate(0deg) scale(1.6);
+  }
+}
+
+.form-container h4 {
+  font-size: var(--font-13px);
+  font-weight: 600;
+}
+
+/* From Uiverse.io by adamgiebl */
+.cssbuttons-io-button {
+  background: var(--main-color);
+  color: white;
+  font-family: inherit;
+  padding: 13px;
+  padding-left: 1.2em;
+  /*18*/
+  font-size: var(--font-18px);
+  font-weight: 500;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em var(--main-color);
+  overflow: hidden;
+  position: relative;
+  height: 3vw;
+  padding-right: 3.3em;
+  cursor: pointer;
+}
+
+.cssbuttons-io-button .icon {
+  background: #cbffc6;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em var(--main-color);
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: var(--main-color);
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+
+.main-container .switchForm {
+  font-size: var(--font-13px);
+  font-weight: 600;
+}
+
+.main-container .switchForm a {
+  color: var(--main-color);
+  text-decoration: none;
+}
