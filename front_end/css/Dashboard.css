@@ -1,0 +1,60 @@
+body {
+  background-color: #abffb8;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body > div {
+  width: 90%;
+  height: 90%;
+  background-image: url("../assets/background.png");
+  background-size: cover;
+}
+
+.main-container .nav-bar {
+  width: 6vw;
+  background-color: #ffff;
+  border-right: 2px solid #eaeaea;
+}
+
+.main-container .nav-bar div img {
+  width: 1.4vw;
+  height: 1.4vw;
+}
+
+.main-container .nav-bar div > :first-child {
+  width: 1.1vw;
+  height: 1.1vw;
+}
+
+.nav-bar > img{
+  width: 1.8vw;
+  height: auto;
+}
+
+.log-out-btn{
+    width: 1.7vw !important;
+}
+
+@media screen and (max-width: 1440px) {
+  body > div {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body > div {
+    width: 98%;
+  }
+  .main-container .nav-bar div img {
+    width: 2vw;
+    height: 2vw;
+  }
+  .main-container .nav-bar div > :first-child {
+    width: 1.6vw;
+    height: 1.6vw;
+  }
+}
