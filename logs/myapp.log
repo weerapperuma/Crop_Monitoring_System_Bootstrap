@@ -1,0 +1,27 @@
+2024-12-06 00:15:17 - HV000001: Hibernate Validator 8.0.1.Final
+2024-12-06 00:15:17 - Starting GreenShadowBackEndApplication using Java 17.0.13 with PID 23104 (C:\DevSahiru\PenguinDepot\Crop_Monitoring_System_Springboot\Green_Shadow_Back_End\build\classes\java\main started by sdwee in C:\DevSahiru\PenguinDepot\Crop_Monitoring_System_Springboot)
+2024-12-06 00:15:17 - The following 1 profile is active: "dev"
+2024-12-06 00:15:19 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-06 00:15:19 - Finished Spring Data repository scanning in 84 ms. Found 7 JPA repository interfaces.
+2024-12-06 00:15:20 - Tomcat initialized with port 5055 (http)
+2024-12-06 00:15:20 - Initializing ProtocolHandler ["http-nio-5055"]
+2024-12-06 00:15:20 - Starting service [Tomcat]
+2024-12-06 00:15:20 - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2024-12-06 00:15:20 - Initializing Spring embedded WebApplicationContext
+2024-12-06 00:15:20 - Root WebApplicationContext: initialization completed in 2654 ms
+2024-12-06 00:15:20 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-06 00:15:20 - HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-12-06 00:15:20 - HHH000026: Second-level cache disabled
+2024-12-06 00:15:20 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-06 00:15:20 - HikariPool-1 - Starting...
+2024-12-06 00:15:21 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3593e074
+2024-12-06 00:15:21 - HikariPool-1 - Start completed.
+2024-12-06 00:15:21 - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-06 00:15:21 - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-12-06 00:15:22 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-06 00:15:23 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-06 00:15:24 - Global AuthenticationManager configured with AuthenticationProvider bean with name authenticationProvider
+2024-12-06 00:15:24 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-06 00:15:25 - Starting ProtocolHandler ["http-nio-5055"]
+2024-12-06 00:15:25 - Tomcat started on port 5055 (http) with context path '/greenshadow'
+2024-12-06 00:15:25 - Started GreenShadowBackEndApplication in 10.351 seconds (process running for 12.306)
